@@ -9,6 +9,8 @@ import { HelloComponent } from './hello.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { GracewaService } from './gracewa.service';
+import { ProfileComponent } from './profile/profile.component';
+import { ProfileService } from './profile.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,HttpClientModule,
@@ -16,8 +18,8 @@ import { GracewaService } from './gracewa.service';
       { path: '', component: HomeComponent },
       
     ]) ],
-  declarations: [ AppComponent, HelloComponent, NavbarComponent, HomeComponent ],
+  declarations: [ AppComponent, HelloComponent, NavbarComponent, HomeComponent, ProfileComponent ],
   bootstrap:    [ AppComponent ],
-  providers: [GracewaService]
+  providers: [GracewaService, ProfileService]
   })
 export class AppModule { }
