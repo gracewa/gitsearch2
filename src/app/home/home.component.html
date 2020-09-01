@@ -33,9 +33,15 @@
         Public Repositories
       </h2>
     </div >
-    <div class="panel-body" *ngFor="let repo of repos">
-     <a href="{{repo.html_url}}"> {{repo.name}}</a>
-    </div>
+    <div class="panel-body" >
+      <div class="row">
+      <div class="col sm-4" *ngFor="let repo of repos">
+      <p> {{repo.name}}</p>
+      <a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-warning"> View on Github </a>
+      </div>
+      </div>
+      </div>
+      
     
   </div>
 </div>
