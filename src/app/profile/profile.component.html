@@ -9,8 +9,9 @@
           <img src="{{profile.avatar_url}}" alt="profile photo">
         </div>
         <div class="col-sm-5">
+          <h2>User Stats</h2>
           <ul class="list-group">
-          <li class="list-group-item" *ngIf="profile.public_repos">{{profile.public_repos + " Repositories"}}</li>
+          <li class="list-group-item" *ngIf="profile.public_repos">{{profile.public_repos + " Public Repositories"}}</li>
           <li class="list-group-item">
             <button>
               View Github Profile
@@ -26,5 +27,10 @@
     </div >
 
   </div>
-
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      Public Repositories
+    </div>
+    
+  </div>
 </div>
