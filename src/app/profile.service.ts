@@ -9,7 +9,7 @@ export class ProfileService {
   
   
   constructor(private http:HttpClient) { 
-    this.username = 'gracewa';
+    this.username = 'BrianTinega';
   }
 
   getProfileInfo(){
@@ -17,6 +17,10 @@ export class ProfileService {
 }
 
 getProfileRepos() {
-    return this.http.get('https://api.github.com/users/gracewa/repos');
+    return this.http.get('https://api.github.com/users/'+ this.username +'/repos');
   }
+
+updateProfile(username:string){
+  this.username=username;
+}
 }

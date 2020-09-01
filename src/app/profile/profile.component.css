@@ -4,3 +4,26 @@ h2 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+#eachRepo {
+  float: left;
+  width: 50;
+  margin: 10px 10px;
+  
+}
+
+#eachRepo .name {
+  font-weight: bold;
+}
+
+.search-form {
+  padding: 50px;
+}
+
+.flexContainer {
+    display: flex;
+}
+
+.inputField {
+    flex: 1;
+}

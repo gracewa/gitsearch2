@@ -1,3 +1,12 @@
+<form action="" class="search-form">
+<div class="flexContainer">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Enter github username" [(ngModel)]="username" name="username" class="inputField">
+    <button class="btn-success" (click)="findProfile()">Search <i class="fa fa-search" aria-hidden="true"></i></button>
+</div>
+  </div>
+</form>
+
 <div *ngIf='profile'>
   <div class="panel panel-default">
     <div class="panel-heading">
