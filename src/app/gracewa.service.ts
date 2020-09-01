@@ -10,6 +10,6 @@ export class GracewaService {
   constructor( private http: HttpClient) { }
 
   getGracewa() {
-    return this.http.get(`${this.apiUrl}`);
+    return this.http.get('https://api.github.com/users/gracewa');
   }
 }

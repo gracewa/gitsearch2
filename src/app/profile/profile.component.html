@@ -1,0 +1,30 @@
+<div *ngIf='profile'>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+    <h1>{{profile.login + "'s Github Profile"}}</h1> 
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="{{profile.avatar_url}}" alt="profile photo">
+        </div>
+        <div class="col-sm-5">
+          <ul class="list-group">
+          <li class="list-group-item" *ngIf="profile.public_repos">{{profile.public_repos + " Repositories"}}</li>
+          <li class="list-group-item">
+            <button>
+              View Github Profile
+            </button>
+          </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div >
+
+  </div>
+
+</div>
