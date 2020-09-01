@@ -8,10 +8,15 @@ import { GracewaService } from '../gracewa.service';
 })
 export class HomeComponent implements OnInit {
   profile:any;
+  repos:any;
 
   constructor(private gracewaService: GracewaService) { 
     this.gracewaService.getGracewa().subscribe(profile => {console.log(profile);
     this.profile=profile;
+    } );
+
+    this.gracewaService.getGracewaRepos().subscribe(repos => {console.log(repos);
+    this.repos=repos;
     } );
   }
 

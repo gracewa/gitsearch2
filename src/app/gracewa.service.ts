@@ -12,4 +12,8 @@ export class GracewaService {
   getGracewa() {
     return this.http.get('https://api.github.com/users/gracewa');
   }
+
+  getGracewaRepos() {
+    return this.http.get('https://api.github.com/users/gracewa/repos');
+  }
 }

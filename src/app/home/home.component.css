@@ -4,3 +4,7 @@ h2 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+#repos a {
+  margin-left: 20px;
+}
