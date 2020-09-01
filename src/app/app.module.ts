@@ -16,6 +16,7 @@ import { ProfileService } from './profile.service';
   imports:      [ BrowserModule, FormsModule,HttpClientModule,
   RouterModule.forRoot([
       { path: '', component: HomeComponent },
+      { path: 'search', component: ProfileComponent }
       
     ]) ],
   declarations: [ AppComponent, HelloComponent, NavbarComponent, HomeComponent, ProfileComponent ],

@@ -14,7 +14,7 @@
           <li class="list-group-item" *ngIf="profile.public_repos">{{profile.public_repos + " Public Repositories"}}</li>
           <li class="list-group-item">
             <button>
-              View Github Profile
+              View Profile on Github
             </button>
           </li>
 
@@ -37,6 +37,7 @@
       <div *ngFor="let repo of repos" id="eachRepo">
       <p class="name">{{repo.name}}</p>
       <a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-warning"> View on Github </a>
+
       </div>
       </div>
       
