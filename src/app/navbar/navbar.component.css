@@ -1,0 +1,18 @@
+a i{
+  font-size:60px;
+  color:purple;
+}
+
+
+nav ul {
+  list-style: none;
+  text-align: left;
+  color: purple;
+
+}
+
+nav ul li {
+  float: left;
+  margin-left: 100px;
+}
+
