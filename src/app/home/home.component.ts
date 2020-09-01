@@ -7,13 +7,16 @@ import { GracewaService } from '../gracewa.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  data:any;
+  profile:any;
 
-  constructor(private gracewaService: GracewaService) { }
+  constructor(private gracewaService: GracewaService) { 
+    this.gracewaService.getGracewa().subscribe(profile => {console.log(profile);
+    this.profile=profile;
+    } );
+  }
 
   ngOnInit() {
-    this.data = this.gracewaService.getGracewa();
-    console.log(this.data)
+   
   }
 
 }
