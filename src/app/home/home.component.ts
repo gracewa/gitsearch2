@@ -9,6 +9,7 @@ import { GracewaService } from '../gracewa.service';
 export class HomeComponent implements OnInit {
   profile:any;
   repos:any;
+  name = 'relativeTime';
 
   constructor(private gracewaService: GracewaService) { 
     this.gracewaService.getGracewa().subscribe(profile => {console.log(profile);

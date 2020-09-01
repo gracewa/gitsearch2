@@ -17,6 +17,7 @@
               View Profile on Github
             </button>
           </li>
+          <li class="list-group-item" *ngIf="profile.created_at">{{"created " + (profile.created_at | relativeTime)}}</li>
 
           </ul>
 
