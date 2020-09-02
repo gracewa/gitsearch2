@@ -6,7 +6,7 @@ h2 {
 }
 
 #eachRepo {
-  float: left;
+  float: auto;
   width: 50;
   margin: 10px 10px;
   
