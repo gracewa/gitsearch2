@@ -21,13 +21,14 @@
           <h2>User Stats</h2>
           <ul class="list-group">
           <li class="list-group-item" *ngIf="profile.public_repos">{{profile.public_repos + " Public Repositories"}}</li>
+          <li class="list-group-item" *ngIf="profile.created_at">{{"created " + (profile.created_at | relativeTime)}}</li>
           <li class="list-group-item">
-            <button>
-              View Profile on Github
-            </button>
+            <a href={{profile.html_url}} target="_blank">
+             View Profile on Github
+            </a>
           </li>
           
-          <li class="list-group-item" *ngIf="profile.created_at">{{"created " + (profile.created_at | relativeTime)}}</li>
+          
           </ul>
 
         </div>

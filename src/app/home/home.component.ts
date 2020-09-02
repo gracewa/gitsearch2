@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit {
     this.repos=repos;
     } );
   }
+  
 
   ngOnInit() {
    
